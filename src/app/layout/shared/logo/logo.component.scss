@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  height: 100%;
+  width: auto;
+  a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    img {
+      height: 65%;
+    }
+  }
+}

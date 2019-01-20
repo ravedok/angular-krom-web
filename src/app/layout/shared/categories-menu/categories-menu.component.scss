@@ -1,0 +1,18 @@
+@import 'index';
+
+:host {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: $gray-200;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+}

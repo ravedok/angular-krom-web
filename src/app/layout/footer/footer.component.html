@@ -1,0 +1,20 @@
+<div class="top">
+  <app-layout-categories-menu></app-layout-categories-menu>
+  <app-layout-language-selector></app-layout-language-selector>
+  <div class="social-networks">
+    <div *ngFor="let network of (socialNetworks | keyvalue)">
+      <a href="{{ network.value }}">
+        <img src="/assets/{{ network.key }}.svg" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <app-layout-menu></app-layout-menu>
+  <app-layout-logo></app-layout-logo>
+  <div class="copyright">
+    Copyright @ 2018 <a href="">Términos y condicciones</a> -
+    <a href="">Privacidad</a>
+  </div>
+</div>

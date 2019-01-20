@@ -1,0 +1,7 @@
+@import 'index';
+
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  color: $white;
+}

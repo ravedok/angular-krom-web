@@ -1,0 +1,35 @@
+@import 'index';
+:host {
+  height: 5rem;
+  background-color: $gray-900;
+  color: $gray-600;
+  border-top: 2px solid $primary;
+
+  .top {
+    display: flex;
+    height: 30px;
+    border-bottom: 1px solid $gray-600;
+    padding: 0 2rem;
+    app-layout-menu {
+      flex-grow: 1;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 2rem;
+
+    app-layout-categories-menu {
+      flex-grow: 1;
+    }
+    .search {
+      color: $gray-200;
+      cursor: pointer;
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+}

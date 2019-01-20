@@ -1,0 +1,5 @@
+<app-home-slider
+  *ngFor="let slider of (sliders$ | async); let i = index"
+  [slider]="slider"
+  [index]="i"
+></app-home-slider>

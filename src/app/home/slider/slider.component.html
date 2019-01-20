@@ -1,0 +1,12 @@
+<div class="content">
+  <span class="title">{{ slider.title }}</span>
+  <span *ngIf="slider.content" class="subtitle">{{ slider.content }}</span>
+  <div class="actions">
+    <a
+      *ngFor="let action of slider.actions"
+      class="btn btn-primary"
+      href="{{ action.action }}"
+      >{{ action.label }}</a
+    >
+  </div>
+</div>

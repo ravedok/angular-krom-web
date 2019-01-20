@@ -1,0 +1,59 @@
+:host {
+  background-size: cover;
+  display: flex;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    .title {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &.first {
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10vw;
+    .content {
+      align-items: flex-end;
+
+      .title {
+        text-align: right;
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .subtitle {
+        text-align: right;
+      }
+    }
+  }
+  &.second,
+  &.third {
+    width: 50%;
+    height: 40vh;
+    padding: 3rem;
+  }
+
+  &.second {
+    justify-content: flex-end;
+    .content {
+      align-items: flex-end;
+      .subtitle {
+        text-align: right;
+      }
+    }
+  }
+
+  &.thrid {
+    justify-content: flex-start;
+  }
+}
