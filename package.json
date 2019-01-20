@@ -11,9 +11,9 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng run ng:server",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "postinstall": "npm run build:ssr"
   },
-  "postinstall": "npm run build:ssr",
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.2.0",
