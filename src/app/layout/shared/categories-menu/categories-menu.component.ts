@@ -10,9 +10,9 @@ import { Observable } from 'rxjs';
 export class CategoriesMenuComponent implements OnInit {
   categories$: Observable<CategoryMenu[]>;
 
-  constructor(private service: LayoutService) {
+  constructor(private service: LayoutService) {}
+
+  ngOnInit() {
     this.categories$ = this.service.categories$;
   }
-
-  ngOnInit() {}
 }

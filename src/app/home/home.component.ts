@@ -10,10 +10,9 @@ import { Observable } from 'rxjs';
 export class HomeComponent implements OnInit {
   sliders$: Observable<HomeSlider[]>;
 
-  constructor(private service: HomeService) {
-    this.sliders$ = this.service.sliders$;
-    console.log(this.sliders$);
-  }
+  constructor(private service: HomeService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.sliders$ = this.service.sliders$;
+  }
 }

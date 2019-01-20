@@ -10,6 +10,7 @@ import { LanguageSelectorComponent } from './shared/language-selector/language-s
 import { CategoriesMenuComponent } from './shared/categories-menu/categories-menu.component';
 import { LogoComponent } from './shared/logo/logo.component';
 import { HomeModule } from '../home/home.module';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,13 @@ import { HomeModule } from '../home/home.module';
     CategoriesMenuComponent,
     LogoComponent
   ],
-  imports: [CommonModule, HttpClientModule, FontAwesomeModule, HomeModule],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    BrowserTransferStateModule,
+    FontAwesomeModule,
+    HomeModule
+  ],
   exports: [LayoutComponent]
 })
 export class LayoutModule {}
